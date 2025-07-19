@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Kart References</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding inline CSS -->
+    <style>
+        body {
+            background-image: url('references.jpg');
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1 {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            text-align: center;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        /* Container to display references */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 550px 550px;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+        }
+
+        /* Individual grid items styling */
+        .grid-item {
+            /* Semi-transparent background */
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Ensure images within grid items are responsive */
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /* Footer styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            /* Semi-transparent background */
+            background-color: rgba(0, 0, 0, 0.7); 
+            align-items: center;
+        }
+
+        /* Footer styling */
+        .footer-left a,
+        .footer-middle a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .footer-middle {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+          <!-- Main heading for the page -->
+        <h1>References</h1>
+        <!-- Centered logo in the header -->
+        <div class="header-center">
+            <a href="index.html"><img src="logo.png" alt="Kathmandu Kart Logo" class="logo"></a>
+        </div>
+        <!-- Login and Signup links  -->
+        <div class="header-right">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="login">Sign up</a>
+        </div>
+    </header>
+    <main>
+        <!-- Grid container for references image and descriptions -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="applerefrence.jpg" alt="Apple reference">
+                <p>Reference from apple</p>
+            </div>
+            <div class="grid-item">
+                <img src="apple.jpg" alt="Apple taken reference">
+                <p>We've implemented bold visuals with minimalistic design</p>
+            </div>
+            <div class="grid-item">
+                <img src="mediumheader.jpg" alt="Meduim Header">
+                <p>Reference from meduim(Header)</p>
+            </div>
+            <div class="grid-item">
+                <img src="mediumreference1.jpg" alt="Reference taken from meduim">
+                <p>We've implemented simple but functional headers.</p>
+            </div>
+            <div class="grid-item">
+                <img src="mediumfooter.jpg" alt="Meduim Footer">
+                <p>Reference from meduim(Footer)</p>
+            </div>
+            <div class="grid-item">
+                <img src="mediumreference2.jpg" alt="Reference taken from medium">
+                <p>We've implemented minimalistic and functional footers.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Adding footer links-->
+        <div class="footer-left">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">X</a>
+        </div>
+        <!-- Adding footer navigation links -->
+        <div class="footer-middle">
+            <a href="blog.html">Blog</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="references.html">References</a>
+        </div>
+    </footer>
+</body>
+</html>

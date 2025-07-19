@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Kart - About Us</title>
+    
+    <!-- Link to the Alegreya Sans SC font -->
+    <link href="Alegreya Sans SC.ttf" rel="stylesheet">
+    
+    <!-- Internal CSS styles -->
+    <style>
+        /* background image and font settings */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-image: url('about us.jpg');
+            background-size: cover;
+            background-position: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Headers */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Centered logo  */
+        .header-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        /* Styles for header  */
+        .header-right a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+        /* Hover effect for the header links */
+        .header-right a:hover {
+        color: #45a049;
+  
+}
+
+        /* Content section styles */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .cv {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cv img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+        }
+
+
+        .footer-left a,
+        .footer-middle a {
+            color: white;
+            margin-right: 20px;
+        }
+    
+        .footer-middle {
+            margin: auto;
+        }
+            /* Hover effect for the footer links */
+.footer-left a:hover,
+.footer-middle a:hover {
+    color: #45a049; 
+
+}
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Centered logo in the header -->
+        <div class="header-center">
+            <a href="index.html"><img src="logo.png" alt="Kathmandu Kart Logo" class="logo"></a>
+        </div>
+        <!-- Right-aligned links for login and signup -->
+        <div class="header-right">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Signup</a>
+        </div>
+    </header>
+    
+    <!-- Main content section -->
+    <main class="content">
+        <!-- CV sections with images -->
+        <div class="cv">
+            <img src="cv1.jpg" alt="CV1">
+        </div>
+        <div class="cv">
+            <img src="cv2.jpg" alt="CV2">
+        </div>
+        <div class="cv">
+            <img src="cv3.jpg" alt="CV3">
+        </div>
+        <div class="cv">
+            <img src="cv4.jpg" alt="CV4">
+        </div>
+    </main>
+    
+    <!-- Footer section -->
+    <footer>
+        <!-- Left-aligned social media links -->
+        <div class="footer-left">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">X</a>
+        </div>
+        <!-- Center-aligned navigational links -->
+        <div class="footer-middle">
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="references.html">References</a>
+        </div>
+    </footer>
+</body>
+</html>

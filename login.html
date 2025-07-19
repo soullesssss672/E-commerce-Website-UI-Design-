@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <!-- Internal CSS styles for this page -->
+    <style>
+        body {
+            background-image: url('refrences.jpg');
+            background-size: 100% 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f231;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Login form container  */
+        .loginform {
+            background-color: #ffffff1c;
+            color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Label  */
+        .loginform label {
+            font-weight: bold;
+        }
+        
+        /* Input for email and password */
+        .loginform input[type="email"],
+        .loginform input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        /* Submit button */
+        .loginform input[type="submit"] {
+            width: 100%;
+            background-color: #32ad43;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* Hover effect for the submit button */
+        .loginform input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login form section -->
+    <section class="loginform">
+        <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+            <ul>
+                <li>
+                    <label for="usermail">Email</label>
+                    <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="password" required>
+                </li>
+                <li>
+                    <input type="submit" value="Login">
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>

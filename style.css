@@ -1,0 +1,111 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.0);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-right a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    transition: color 0.3s, text-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+/* Hover effect for the header links */
+.header-right a:hover {
+    color: #45a049;
+  
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-left .essence {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content-left pre {
+    font-size: 22px;
+    white-space: pre-wrap;
+}
+
+.shop-button {
+    display: block;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.content-right {
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+}
+
+.footer-left a,
+.footer-middle a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s, text-shadow 0.3s; /* Adding transition for smooth effect */
+}
+
+/* Hover effect for the footer links */
+.footer-left a:hover,
+.footer-middle a:hover {
+    color: #45a049; 
+
+}
+
+.footer-middle {
+    margin: auto;
+}

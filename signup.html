@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+    <!-- Internal CSS styles -->
+    <style>
+        body {
+            background-image: url('refrences.jpg');
+            font-family: Arial, Helvetica, sans-serif;
+            background-size: 100% 100%;
+            background-color: #f2f2f2;
+            color:aliceblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            width: 400px;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Input and textarea */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(180, 180, 180, 0.329);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        /* Radio button  */
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Submit button  */
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #121212;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #a05045;
+        }
+    </style>
+</head>
+<body>
+    <form name="loginForm" onsubmit="return validateForm()">
+        <label>First Name:</label>
+        <input type="text" name="fname">
+        <br><br>
+        <label>Last Name:</label>
+        <input type="text" name="lname">
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="genderDetails" value="male" checked>Male
+        <input type="radio" name="genderDetails" value="female">Female
+        <br><br>
+        <label>Contact Info:</label>
+        <input type="text" name="contact">
+        <br><br>
+        <label>E-mail:</label>
+        <input type="text" name="mail">
+        <br><br>
+        <label>Message:</label>
+        <br>
+        <textarea rows="5" cols="10" name="message" placeholder="Enter your message here."></textarea>
+        <br><br>
+        <input type="submit" value="Submit Button">
+    </form>
+    
+    <!-- JavaScript for form validation -->
+    <script type="text/javascript">
+        function validateForm() {
+            // Get form values
+            var firstName = document.forms["loginForm"]["fname"].value;
+            var lastName = document.forms["loginForm"]["lname"].value;
+            var gender = document.querySelector('input[name="genderDetails"]:checked').value;
+            var contactInfo = document.forms["loginForm"]["contact"].value;
+            var email = document.forms["loginForm"]["mail"].value;
+            var messageDetails = document.forms["loginForm"]["message"].value;
+            
+            // Check if any field is empty
+            if (firstName === "" || lastName === "" || contactInfo === "" || messageDetails === "" || email === "") {
+                alert("Empty fields detected!! Please input the required values in the fields required");
+                return false;
+            } else {
+                alert("Thank you for your feedback!!!");
+            }
+        }
+    </script>
+</body>
+</html>
